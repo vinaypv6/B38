@@ -32,4 +32,16 @@ public class LoginPage {
 		loginBTN.click();
 	}
 	
+//	public void login1(String un,String pw) {
+//		unTB.sendKeys(un);
+//		pwTB.sendKeys(pw);
+//		loginBTN.click();
+//	}
+//	
+//	
+//	public void login2(String un,String pw) {
+//		setUserName(un);
+//		setPassword(pw);
+//		clickLoginButton();
+//	}
 }

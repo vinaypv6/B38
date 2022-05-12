@@ -4,16 +4,16 @@
   <test thread-count="5" parallel="tests" name="Test1(failed)">
     <parameter name="config" value="qa_config.properties"/>
     <classes>
-      <class name="script.Demo1">
+      <class name="script.ValidLogin">
         <methods>
           <include name="openApp"/>
           <include name="initReport"/>
           <include name="createTest"/>
-          <include name="test1"/>
           <include name="closeApp"/>
           <include name="publishReport"/>
+          <include name="testValidLogin"/>
         </methods>
-      </class> <!-- script.Demo1 -->
+      </class> <!-- script.ValidLogin -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

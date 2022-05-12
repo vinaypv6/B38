@@ -21,7 +21,6 @@ public class EnterTimeTrackPage {
 		catch (Exception e) 
 		{
 			return false;
-		
 		}
 	}
 }
