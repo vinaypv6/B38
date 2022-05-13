@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="script.InvalidLogin" class="method navigator-link" hash-for-method="testInvalidLogin">testInvalidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="script.ValidLogin" class="method navigator-link" hash-for-method="testValidLogin(ADMIN, manager, actiTIME - Enter Time-Track)">testValidLogin(ADMIN, manager, actiTIME - Enter Time-Track)</a> <!-- method navigator-link -->
@@ -119,6 +124,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">script.InvalidLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin">
+                  </a> <!-- testInvalidLogin -->
+                  <span class="method-name">testInvalidLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -151,6 +171,7 @@
       &lt;package name=&quot;script&quot;/&gt;
     &lt;/packages&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;script.InvalidLogin&quot;/&gt;
       &lt;class name=&quot;script.ValidLogin&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
@@ -165,7 +186,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (1 class)</span>
+                <span class="test-name">Test1 (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -178,6 +199,10 @@
             <div class="test-group">
               <span class="test-group-name">smoke</span>
               <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">testValidLogin</span>
                 <br/>
@@ -199,16 +224,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testValidLogin')
 data.setCell(0, 2, 'script.ValidLogin')
-data.setCell(0, 3, 4533);
+data.setCell(0, 3, 5057);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testInvalidLogin')
+data.setCell(1, 2, 'script.InvalidLogin')
+data.setCell(1, 3, 2844);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -223,9 +252,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">script.ValidLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">publishReport</span>
+                <br/>
+                <span class="ignored-method-name">initReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -234,30 +272,52 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">script.ValidLogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">script.InvalidLogin</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">script.ValidLogin</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">createTest(public void script.ValidLogin.testValidLogin(java.lang.String,java.lang.String,java.lang.String))</span>
-                <span class="method-start">1688 ms</span>
+                <span class="method-start">2232 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">openApp(qa_config.properties)</span>
-                <span class="method-start">1697 ms</span>
+                <span class="method-start">2247 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidLogin(ADMIN, manager, actiTIME - Enter Time-Track)</span>
-                <span class="method-start">12539 ms</span>
+                <span class="method-start">21666 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp([TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin(java.lang.String,jav...)</span>
-                <span class="method-start">17076 ms</span>
+                <span class="method-start">26727 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">script.InvalidLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">createTest(public void script.InvalidLogin.testInvalidLogin())</span>
+                <span class="method-start">27637 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp(qa_config.properties)</span>
+                <span class="method-start">27639 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin</span>
+                <span class="method-start">43993 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, insta...)</span>
+                <span class="method-start">46841 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">publishReport</span>
-                <span class="method-start">17784 ms</span>
+                <span class="method-start">49726 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
